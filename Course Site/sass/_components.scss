@@ -1,0 +1,59 @@
+.btn {
+    font-size: 1.8rem;
+    font-family: var(--font-Inter);
+    font-weight: 700;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 1.3rem 4.8rem;
+
+    &--white {
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+        margin-right: 2.4rem;
+    }
+
+    &--blue {
+
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        transition: all .3s;
+
+        &:hover {
+            background-color: var(--color-primary-darken);
+        }
+    }
+}
+
+.slider-btn {
+    font-size: 3rem;
+    color: var(--color-white);
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 4rem;
+        height: 4rem;
+        background-color: var(--color-yellow);
+        z-index: -1;
+
+    }
+
+    &:not(:last-child) {
+        margin-right: 2.4rem;
+    }
+}
+
+.grid {
+
+    &-element {
+        max-width: 32.8rem;
+    }
+}

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Адаптивіність 
+$rp-1300: 81.25em; //1300px
+$rp-1120: 70em; //1120px
+$rp-900: 56.25em; //900px
+$rp-790: 49.375em; //790px
+$rp-600: 37.5em; //600px
+$rp-480: 30em; //480px
+
+
+
+
+
+html {
+    font-size: 10px;
+
+    @media (max-width:$rp-1300) {
+        font-size: 9px;
+    }
+
+    @media (max-width:$rp-1120) {
+        font-size: 8px;
+    }
+
+    @media (max-width:$rp-480) {
+        font-size: 7px;
+    }
+}
+
+
+
+.container {
+    max-width: 114rem;
+    margin: 0 auto;
+
+    @media (max-width:$rp-900) {
+        padding: 3rem;
+    }
+}
+
+.testemonials {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-2-col {
+    grid-template-columns: repeat(2, minmax(40rem, 1fr));
+
+    @media (max-width:$rp-790) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width:$rp-900) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+}
+
+.grid-gap-8 {
+    gap: 8rem;
+}
+
+.footer {
+    background-color: var(--color-footer);
+}
