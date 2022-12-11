@@ -1,0 +1,312 @@
+// Секції + відступи від них
+.section {
+    &-hero {
+        padding: 3.5rem 13rem 8.3rem 13rem;
+        margin-bottom: 6rem;
+    }
+
+    &-partners {
+        margin-bottom: 7.3rem;
+
+        @media (max-width:$res-375) {
+            margin-bottom: 60px;
+
+        }
+    }
+
+    &-feature {
+        margin-bottom: 10.2rem;
+
+        @media (max-width:$res-1000) {
+            padding: 2rem;
+            margin-bottom: 8.2rem;
+        }
+
+        @media (max-width:$res-375) {
+            margin-bottom: 40px;
+
+        }
+    }
+
+    &-team {
+        margin-bottom: 5.4rem;
+
+        @media (max-width:$res-1000) {
+            padding: 2rem;
+            margin-bottom: 4.4rem;
+
+        }
+
+        @media (max-width:$res-450) {
+            padding: 0;
+        }
+    }
+
+}
+
+
+// Навігація
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    &__logo {
+        display: flex;
+
+        align-items: center;
+        gap: 1.8rem;
+    }
+
+    &__img {
+        @media (max-width:$res-1134) {
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        @media (max-width:$res-710) {
+            display: none;
+        }
+    }
+
+
+}
+
+// Hero контрейнер
+
+.hero {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 41rem) minmax(30rem, 65rem));
+    // // grid-template-columns: repeat(2, 1fr);
+    // gap: 12rem;
+    // align-items: center;
+    display: flex;
+    gap: 12rem;
+
+    @media (max-width:$res-890) {
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width:$res-375) {
+        gap: 30px;
+    }
+
+    &__text {
+        flex: 0 1 42rem;
+
+        @media (max-width:$res-1134) {
+            flex: 0 1 35rem;
+        }
+
+        @media (max-width:$res-890) {
+            flex: 0 1 49rem;
+        }
+
+        @media (max-width:$res-375) {
+            flex: 0 0 335px;
+        }
+    }
+
+    &__imge {
+        // width: 100%;
+        flex: 0 1 65rem;
+
+        @media (max-width:$res-1134) {
+            flex: 0 1 50rem;
+        }
+
+        @media (max-width:$res-375) {
+            flex: 0 0 335px;
+        }
+
+
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+// Партнери 
+
+.partners {
+
+
+    &__text {
+        max-width: 41.1rem;
+        margin: 0 auto;
+        margin-bottom: 5.5rem;
+
+        &--sub {
+            display: block;
+
+
+        }
+
+
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6.8rem;
+        margin-bottom: 5.5rem;
+
+        @media (max-width:$res-375) {
+            gap: 40px;
+        }
+    }
+
+    &__icon {}
+}
+
+// Секція з можливостями ( Грід на 2 колонки)
+
+.section {
+    &-feature {
+        // display: grid;
+        // // grid-template-columns: 60rem 40rem;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-column-gap: 11rem;
+        // grid-row-gap: 7.3rem;
+        // justify-items: center;
+        // align-items: center;
+
+
+
+
+    }
+}
+
+.feature {
+
+
+    &__imge {
+        flex: 0 1 60rem;
+
+        @media (max-width:$res-710) {
+            flex: 0 1 55rem;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__text {
+        flex: 0 1 47rem;
+
+
+
+    }
+}
+
+
+// Секція з командою 
+
+.team {
+    &-text {
+        max-width: 40.4rem;
+        margin: 0 auto;
+
+        margin-bottom: 4.5rem;
+
+        &>*:not(:last-child) {
+            margin-bottom: 1.6rem;
+        }
+
+        @media (max-width:$res-375) {
+            margin-bottom: 41px;
+
+        }
+    }
+
+    &-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 4.7rem;
+        margin-bottom: 4.5rem;
+
+        @media (max-width:$res-1000) {
+            gap: 3rem;
+        }
+
+        @media (max-width:$res-890) {
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            justify-items: center;
+            gap: 3rem;
+        }
+
+        @media (max-width:$res-710) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        @media (max-width:$res-450) {
+            grid-template-columns: 1fr;
+            gap: 3.5rem;
+        }
+    }
+
+    &-card {
+        padding: 2rem 3.9rem;
+        box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 3px 8px 24px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.person {
+    &-img {
+        max-width: 17.5rem;
+        margin-bottom: 1.9rem;
+    }
+
+    &-name {
+        margin-bottom: 1.7rem;
+    }
+}
+
+
+// Футер
+.footer {
+    background-color: $col-green-main;
+    padding: 5.3rem 13.1rem;
+
+
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media (max-width:$res-710) {
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-sotial {
+        display: flex;
+        gap: 2rem;
+    }
+}

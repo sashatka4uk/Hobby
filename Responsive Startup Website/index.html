@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site</title>
+    <link rel="shortcut icon" href="img/logo/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Макет є тут https://www.figma.com/file/REejwdw2wZTPiebYFNvcPR/Responsive-Startup-Website-(Community) -->
+    <!-- Початок сторінки з навігацією і картинкою -->
+    <section class="modal__navigation none"></section>
+    <section class="section-hero">
+        <header class="header container">
+            <nav class="navigation">
+                <a href="#" class="navigation__logo">
+                    <img class="navigation__img" src="img/logo/logo.svg" alt="Site Logo">
+                    <span class="navigation__name">Start</span>
+                </a>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Portfolio</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+                </ul>
+
+                <div class="navigation__icon none">
+                    <span class="navigation__icon--line"></span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero__text">
+                <span class="hero__text--sub mb-15">WELCOME</span>
+                <h1 class="hero__text--main mb-15">Lorem ipsum dolor sit amet consectetur</h1>
+                <p class="hero__text--paragraph mb-25">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Suscipit nemo
+                    hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?
+                </p>
+                <a href="#" class="btn btn--white">Explore</a>
+            </div>
+            <div class="hero__imge">
+                <img class="hero__img" src="img/hero.svg" alt="Main image">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція з компаніями і лого -->
+    <section class="section-partners container">
+        <div class="partners__text">
+            <span class="partners__text--sub mb-16">partners</span>
+            <h2 class="partners__text--main mb-16">Lorem Ipsum Dolor</h2>
+            <p class="partners__text--paragraph">Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit.</p>
+        </div>
+        <div class="partners__logo">
+            <img class="partners__icon" src="img/google.svg" alt="Google logo">
+            <img class="partners__icon" src="img/microsoft.svg" alt="Microsoft logo">
+            <img class="partners__icon" src="img/airbnb.svg" alt="Airbnb logo">
+            <img class="partners__icon" src="img/facebook.svg" alt="Facebook logo">
+            <img class="partners__icon" src="img/spotify.svg" alt="Spotify logo">
+        </div>
+        <div class="partners__btn center">
+            <a href="#" class="btn btn--dark center">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Секція з грідами на 2 колонки -->
+
+    <section class="section-feature container">
+        <!-- Контейнера для флекса з 2 елементами -->
+        <div class="col-2 mb-74">
+            <div class="feature__imge">
+                <img class="feature__img" src="img/card-1.svg" alt="Feature 1">
+            </div>
+            <div class="feature__text">
+                <h2 class="feature__text--main mb-16">Lorem ipsum dolor sit amet consectetur</h2>
+                <p class="feature__text--sub mb-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+                    nemo
+                    hic
+                    quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                <a href="#" class="btn btn--dark">Learn More</a>
+            </div>
+        </div>
+
+
+        <div class="col-2 reverse">
+            <div class="feature__text">
+                <h2 class="feature__text--main mb-16">Lorem ipsum dolor sit amet consectetur</h2>
+                <p class="feature__text--sub mb-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+                    nemo
+                    hic
+                    quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                <a href="#" class="btn btn--dark">Learn More</a>
+            </div>
+            <div class="feature__imge">
+                <img class="feature__img" src="img/card-2.svg" alt="Feature 2">
+            </div>
+        </div>
+
+    </section>
+    <!-- Секція з командою -->
+    <section class="section-team container">
+        <div class="team-text">
+            <span class="team-text--sub">team</span>
+            <h2 class="team-text--main">Our Talents</h2>
+            <p class="team-text--paragraph">Lorem ipsum, dolor sit amet consectetur
+                Suscipit nemo hic quos, ab,</p>
+        </div>
+        <div class="team-info">
+            <!-- 01 -->
+            <div class="team-card">
+                <img class="person-img" src="img/person-1.svg" alt="Person photo 1">
+                <h2 class="person-name">Peg Legge</h2>
+                <p class="person-job">CEO</p>
+            </div>
+            <!-- 02 -->
+            <div class="team-card">
+                <img class="person-img" src="img/person-2.svg" alt="Person photo 2">
+                <h2 class="person-name">Richard Guerra</h2>
+                <p class="person-job">CTO</p>
+            </div>
+            <!-- 03 -->
+            <div class="team-card">
+                <img class="person-img" src="img/person-3.svg" alt="Person photo 3">
+                <h2 class="person-name">Alexandra Stolz</h2>
+                <p class="person-job">DESIGNER</p>
+            </div>
+            <!-- 04 -->
+            <div class="team-card">
+                <img class="person-img" src="img/person-4.svg" alt="Person photo 4">
+                <h2 class="person-name">Janet Bray</h2>
+                <p class="person-job">DEVELOPER</p>
+            </div>
+        </div>
+        <div class="btn--team">
+            <a href="#" class="btn btn--dark ">Learn More</a>
+        </div>
+    </section>
+    <!-- Футер -->
+    <footer class="footer ">
+        <div class="footer-info container">
+            <div class="footer-sotial ">
+                <a href="#"><img src="img/logo/facebook-logo.svg" alt="Facebook logo"></a>
+                <a href="#"><img src="img/logo/instagram.svg" alt="Instagram logo"></a>
+                <a href="#"><img src="img/logo/twitter.svg" alt="Twitter logo"></a>
+                <a href="#"><img src="img/logo/pinterest.svg" alt="Pinterest logo"></a>
+                <a href="#"><img src="img/logo/tiktok.svg" alt="TikTok logo"></a>
+                <a href="#"><img src="img/logo/viber.svg" alt="Viber logo"></a>
+                <a href="#"><img src="img/logo/youtube.svg" alt="YouTube logo"></a>
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-copyright--text">&copy; Start, 2022. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+body {
+    font-family: $ff-WorkSans;
+    font-weight: 400;
+    color: $col-white;
+}
+
+
+// Навігація
+.navigation {
+    &__name {
+        font-family: $ff-WorkSans;
+        font-size: 4rem;
+        font-weight: 500;
+        color: $col-white;
+    }
+
+    &__list {
+        list-style-type: none;
+
+    }
+
+    &__link {
+        font-family: $ff-WorkSans;
+        font-size: 2rem;
+        font-weight: 400;
+        color: $col-white;
+    }
+
+
+}
+
+// Hero контрейнер
+
+.hero {
+    &__text {
+        &--sub {
+            display: inline-block;
+            font-family: $ff-WorkSans;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 5px;
+            text-align: left;
+        }
+
+        &--main {
+
+            font-family: $ff-Crimson;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 50px;
+            letter-spacing: 0px;
+            text-align: left;
+
+            @media (max-width:$res-1134) {
+                font-size: 3rem;
+                line-height: 1;
+            }
+        }
+
+        &--paragraph {
+
+            font-family: $ff-WorkSans;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 19px;
+            text-align: left;
+
+        }
+    }
+}
+
+// Партнери
+.partners {
+
+
+    &__text {
+
+        &--sub {
+            color: $col-green-main;
+            text-transform: uppercase;
+            font-family: $ff-WorkSans;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 5px;
+            text-align: center;
+
+        }
+
+        &--main {
+            color: $col-dark;
+            font-family: $ff-Crimson;
+            font-size: 4rem;
+            font-weight: 700;
+            text-align: center;
+
+        }
+
+        &--paragraph {
+            color: $col-dark;
+            font-family: $ff-WorkSans;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: center;
+
+        }
+    }
+}
+
+// Можливості
+.feature__text {
+    &--main {
+        font-family: $ff-Crimson;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: left;
+        color: $col-dark-main;
+    }
+
+    &--sub {
+        font-family: $ff-WorkSans;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 19px;
+        color: $col-dark-main;
+    }
+}
+
+// Текст перед карточками
+.team-text {
+
+    &--sub {
+        display: block;
+        text-transform: uppercase;
+        font-family: $ff-WorkSans;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 5px;
+        text-align: center;
+        color: $col-green-main;
+    }
+
+    &--main {
+
+        font-family: $ff-Crimson;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $col-dark-main;
+    }
+
+    &--paragraph {
+        font-family: $ff-WorkSans;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        color: $col-dark;
+    }
+}
+
+
+// Карточки з командою
+.person {
+    &-name {
+        color: $col-dark-main;
+        font-family: $ff-Crimson;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-align: left;
+
+    }
+
+    &-job {
+        //styleName: Typography/Body/Regular;
+        font-family: $ff-WorkSans;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: left;
+        color: $col-dark-main;
+
+    }
+}
+
+// Футер текст
+.footer {
+    &-copyright {
+        &--text {
+            font-family: $ff-WorkSans;
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
